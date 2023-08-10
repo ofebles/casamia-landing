@@ -1,28 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Welcome Casamia.">
   <header></header>
-
   <main>
-    <section class="flex flex-col items-center justify-center w-full h-screen">
-      <div class="z-30 flex flex-col w-10/12 px-10 pt-14">
-        <div class="text-white flex justify-between pt-24 pb-8">
-          <h1 class="text-8xl border-b uppercase">Eat</h1>
-          <h1 class="text-8xl border-b uppercase">DRINK</h1>
-          <h1 class="text-8xl border-b uppercase">VISIT</h1>
+    <section
+      class="flex justify-center h-[32rem] w-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/images/kitchen.jpg');"
+    >
+      <div class="flex items-center">
+        <h1 class="text-8xl text-white uppercase">Story</h1>
+      </div>
+    </section>
+    <section>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8 lg:px-16 pt-8 md:pt-16 lg:pt-32"
+      >
+        <div>
+          <h1 class="text-4xl pb-2 uppercase">INNOVATING FOR A</h1>
+          <h1 class="text-4xl uppercase">GLOBAL PALATE SINCE 1987.</h1>
+        </div>
+        <div class="text-lg">
+          <p class="pb-8 text-sans-serif">
+            Welcome to the Juniper Template. To get started, watch these short
+            videos on Squarespace basics and read the template guide. This Text
+            Block is perfect for generating visitor interest by going into more
+            detail about yourself, your project, or company. You can talk about
+            how your idea started, how long you’ve been working on it and why
+            it’s important. The more specific you are, the more visitors can
+            engage with what you do.
+          </p>
+          <p>
+            You can also use this space to answer any questions your visitors
+            may have about you or your work. To get them interested in clicking
+            the Button Block below, you can talk about your creative process,
+            what sets your idea apart, and how happy you are to share it. Learn
+            more about blocks here. Also, be sure to edit the button’s URL so it
+            links to a page on your site.
+          </p>
         </div>
       </div>
-      <h3 class="z-30 text-2xl text-center font-thin pt-20 text-white">
-        123 DEMO STREET — NEW YORK, NY — (555) 555-5555
-      </h3>
-      <image
-        src="/images/kitchen.jpg"
-        alt="Astro Logo"
-        class="w-full h-screen z-20 top-0 object-cover absolute"
-      />
     </section>
   </main>
 </Layout>
