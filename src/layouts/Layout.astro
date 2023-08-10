@@ -1,6 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import Navigator from "../components/react/NavBar";
+import NavBar from "../components/Navbar.astro";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -16,29 +18,29 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
     <title>{title}</title>
     <Navigator />
-  </head><body>
-    <slot />
-    <footer>
-      <Footer />
-    </footer>
-    <style is:global>
-      @font-face {
-        font-family: "Orpheus Pro";
-        src: url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.eot");
-        src: url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.woff2")
-            format("woff2"),
-          url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.woff")
-            format("woff"),
-          url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.ttf")
-            format("truetype"),
-          url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.svg#Orpheus Pro")
-            format("svg");
-      }
-    </style>
-  </body>
-  ../components/react/NavBar
+  </head>
+  <Navigator />
+  <slot />
+  <footer>
+    <Footer />
+  </footer>
+  <style is:global>
+    @font-face {
+      font-family: "Orpheus Pro";
+      src: url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.eot");
+      src: url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.eot?#iefix")
+          format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.woff2")
+          format("woff2"),
+        url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.woff")
+          format("woff"),
+        url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.ttf")
+          format("truetype"),
+        url("https://db.onlinewebfonts.com/t/2aea0ac500c896188f9ad191c231029c.svg#Orpheus Pro")
+          format("svg");
+    }
+  </style>
 </html>

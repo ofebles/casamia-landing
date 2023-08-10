@@ -3,25 +3,25 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome Casamia.">
-  <header></header>
-
   <main>
-    <section class="flex flex-col items-center justify-center w-full h-screen">
-      <div class="z-30 flex flex-col w-10/12 px-10 pt-14">
-        <div class="text-white flex justify-between pt-24 pb-8">
-          <h1 class="text-8xl border-b uppercase">Eat</h1>
-          <h1 class="text-8xl border-b uppercase">DRINK</h1>
-          <h1 class="text-8xl border-b uppercase">VISIT</h1>
+    <section>
+      <div class="flex flex-col items-center justify-center w-full h-screen">
+        <div class="z-30 flex flex-col w-10/12 px-10 pt-14">
+          <div class="text-white flex flex-grow pt-24 pb-4 justify-center">
+            <h1 class="text-8xl border-b uppercase">Casamía</h1>
+          </div>
         </div>
+        <h3
+          class="sm:hidden z-30 text-2xl text-center uppercase font-thin pt-10 text-white px-4"
+        >
+          Calle 1ra #103 -1er piso- e/ C y D, Vedado, La Habana
+        </h3>
+        <image
+          src="/images/bg_main.jpg"
+          alt="Astro Logo"
+          class="absolute object-cover w-full h-full z-0 brightness-50"
+        />
       </div>
-      <h3 class="z-30 text-2xl text-center font-thin pt-20 text-white">
-        123 DEMO STREET — NEW YORK, NY — (555) 555-5555
-      </h3>
-      <image
-        src="/images/hero_image.jpg"
-        alt="Astro Logo"
-        class="w-full h-screen z-20 top-0 object-cover absolute"
-      />
     </section>
   </main>
 </Layout>

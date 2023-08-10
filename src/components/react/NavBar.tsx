@@ -4,28 +4,27 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleMenu() {
+    console.log('clicked');
     setIsOpen(!isOpen);
   }
 
   return (
-    <nav id="main-nav" className="fixed flex items-center justify-between w-full pr-10 py-10 z-40 text-white">
-      <div className="logo">
-        <a href="/"> <h2 className="text-3xl pl-8 uppercase font-thin">Casamia</h2></a>
+    <nav id="main-nav" className="fixed flex items-center justify-between w-full pr-10 px-6 py-10 z-40 text-white">
+      <div>
+        <a href="/">
+          <img src="/images/logo.png" alt="logo" className='h-20' />
+          </a>
       </div>
 
       <ul className={`md:flex items-center justify-between space-x-4 text-xl pr-8 font-semibold font-mono ${isOpen ? '' : 'hidden'}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/story/">Story</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <button className="md:hidden flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white" onClick={toggleMenu}>
-          <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/gallery/">Galería</a></li>
+        <li><a href="/blog">Menú</a></li>
+        <li><a href="/blog">Reserva</a></li>
+        
       </ul>
-
-      <svg className="h-6 w-6 fill-current md:hidden" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" onClick={toggleMenu}>
+      
+      <svg className="h-6 w-6 fill-current md:hidden" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" cursor-pointer onClick={toggleMenu}>
         <title>Menu</title>
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
       </svg>

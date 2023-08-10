@@ -3,16 +3,17 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome Casamia.">
-  <header></header>
   <main>
-    <section
-      class="flex justify-center h-[32rem] w-full bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/images/kitchen.jpg');"
+    <div class="bg-black w-full h-56"></div>
+    <div
+      class="flex justify-center h-[32rem] w-full bg-cover bg-center bg-no-repeat z-30"
+      style="background-image: url('/images/kitchen.jpg'); filter: brightness(0.5);"
     >
-      <div class="flex items-center">
+      <div class="flex items-center z-40">
         <h1 class="text-8xl text-white uppercase">Story</h1>
       </div>
-    </section>
+    </div>
+
     <section>
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8 lg:px-16 pt-8 md:pt-16 lg:pt-32"
@@ -23,21 +24,22 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div class="text-lg">
           <p class="pb-8 text-sans-serif">
-            Welcome to the Juniper Template. To get started, watch these short
-            videos on Squarespace basics and read the template guide. This Text
-            Block is perfect for generating visitor interest by going into more
-            detail about yourself, your project, or company. You can talk about
-            how your idea started, how long you’ve been working on it and why
-            it’s important. The more specific you are, the more visitors can
-            engage with what you do.
+            El restaurant es el sueño de tres jóvenes que decidieron aventurarse
+            a crear un restaurant familiar. Está ubicado en la casa donde
+            crecieron los dueños, el lugar está lleno de historia y recuerdos
+            guardados en sus paredes, de ahí el gran valor sentimental que
+            representa para sus creadores. Decidieron abrirlo en honor a Ive
+            Blanco, madre y tía, quien siempre soñó con tener un negocio
+            familiar pero los sucesos y dificultades de la vida le impidieron
+            abrirlo.
           </p>
           <p>
-            You can also use this space to answer any questions your visitors
-            may have about you or your work. To get them interested in clicking
-            the Button Block below, you can talk about your creative process,
-            what sets your idea apart, and how happy you are to share it. Learn
-            more about blocks here. Also, be sure to edit the button’s URL so it
-            links to a page on your site.
+            Ahora sus hijos y sobrino crean este hermoso concepto de restaurant
+            en honor a una de las personas que los enseñó a perseverar y luchar
+            por sus sueños. Así que en el año 2018 el destino confabuló para que
+            se creara este proyecto familiar que agrupa ambiciones y sueños de
+            la familia. De ahí su nombre “Casa Mía”. Ahora Ive puede disfrutar
+            con su familia de su sueño por fin realizado.
           </p>
         </div>
       </div>
